@@ -2,7 +2,6 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion build_versions.target_sdk
-    buildToolsVersion build_versions.build_tools
     defaultConfig {
         applicationId "com.example.mvp.androidmvparchitectureexample"
         minSdkVersion build_versions.min_sdk
@@ -37,6 +36,7 @@ android {
     packagingOptions {
         exclude 'META-INF/rxjava.properties'
     }
+    buildToolsVersion '27.0.3'
 }
 
 dependencies {
